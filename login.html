@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | Launchpad</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">L</span> launchpad</a>
+    <a class="text-link" href="register.html">Create account <span>→</span></a>
+  </header>
+
+  <main class="auth-layout">
+    <section class="auth-card">
+      <span class="eyebrow">WELCOME BACK</span>
+      <h1>Good to see you.</h1>
+      <p class="auth-subtitle">Log in to pick up where you left off.</p>
+      <form id="login-form" class="form-stack">
+        <label>Email address
+          <input type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        </label>
+        <label>Password
+          <input type="password" name="password" placeholder="Enter your password" required minlength="6" autocomplete="current-password">
+        </label>
+        <button class="button button-wide" type="submit">Log in <span>→</span></button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+      <p class="auth-switch">New to Launchpad? <a href="register.html">Create an account</a></p>
+      <p class="demo-hint">Demo: register an account on this browser, then log in.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="../index.html"><span class="brand-mark">L</span> launchpad</a>
+    <span>© <span data-year></span> Launchpad</span>
+  </footer>
+</body>
+</html>
