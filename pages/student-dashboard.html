@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My dashboard | Launchpad</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/data/sample-jobs.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">L</span> launchpad</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="jobs.html">Find jobs</a>
+      <a class="nav-login" href="student-dashboard.html">My dashboard</a>
+      <button class="button button-small" id="logout-button">Log out</button>
+    </nav>
+  </header>
+
+  <main class="dashboard-page">
+    <div class="dashboard-welcome">
+      <div>
+        <span class="eyebrow">STUDENT DASHBOARD</span>
+        <h1>Welcome, <span id="dashboard-name">there</span>.</h1>
+        <p>Here’s a snapshot of your job search.</p>
+      </div>
+      <a class="button" href="jobs.html">Explore jobs <span>→</span></a>
+    </div>
+
+    <div class="dashboard-stats">
+      <article><span>Saved jobs</span><b id="saved-count">0</b></article>
+      <article><span>Applications</span><b id="application-count">0</b></article>
+      <article><span>Profile status</span><b class="status-good">Getting started</b></article>
+    </div>
+
+    <section class="dashboard-section">
+      <div class="section-heading">
+        <div><h2>Saved opportunities</h2><p>Roles you’ve bookmarked for later.</p></div>
+      </div>
+      <div class="job-grid" id="saved-jobs-list"></div>
+      <div class="empty-state" id="saved-empty">
+        <span>☆</span><h2>No saved roles yet</h2>
+        <p>Save jobs you like and they’ll show up here.</p>
+        <a class="text-link" href="jobs.html">Browse open roles →</a>
+      </div>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-heading">
+        <div><h2>Your applications</h2><p>Jobs you’ve applied to on this browser.</p></div>
+      </div>
+      <div id="applications-list" class="application-list"></div>
+      <div class="empty-state" id="applications-empty">
+        <p>You haven’t applied to any roles yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="../index.html"><span class="brand-mark">L</span> launchpad</a>
+    <span>© <span data-year></span> Launchpad</span>
+  </footer>
+</body>
+</html>
