@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html label="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viweport" content="with=device-width,initail-scale=1">
+        <meta name="description" content="Find internships and jobs, manage applications, and prepare for placement season.">
+        <title>Launchpad | Find your next opportunity</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/data/sample-jobs.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="index.html"><span class="brand-mark">L</span>launchpad</a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">=</button>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="pages/jobs.html">Final jobs</a>
+                <a href="#how-it-works">How it works</a>
+                <a class="nav-login" href="pages/login.html">Get started</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <span class="eyebrow"><span class="eyebrow-dot"></span>YOUR CAREER STARTS HERE </span>
+                    <h1>Make your next move<span>count.</span></h1>
+                    <p>Discover interships and jobs from compaines looking for fresh talent. your first opportunity is closer than your think.</p>
+                    <div class="search-bar" action="pages/jobs.html" method="get">
+                        <label class="search-field">
+                        <input name="q" placeholder="job title, skill, or company" aria-label="Search jobs">
+                        </label>
+                        <button  class="button" type="submit">Search jobs<span aria-hidden="true"></span></button>
+
+                    </div>
+                    <p class ="search-hint">
+                        <a href="pages/jobs.html? q=Design">Design</a>
+                        <a href="pages/jobs.html? q=Engineering">Engineering</a>
+                        <a href="pages/jobs.html? q=Marketing">Marketing</a>
+                    </p>
+                </div>
+                <div class="hero-art" aria-label="Career progress illustration" role="img">
+                    <div class ="art-orbit orbit-one"></div>
+                    <div class ="art-orbit orbit-two"></div>
+                    <div class ="art-card art-card-main">
+                        <div class ="art-card-top">
+                            <span class="company-icon">*</span>
+                            <span class="pill pill-green">New match</span>
+                        </div>
+                        <p class="art-muted">PRODUCT DESIGN INTERN</p>
+                        <h3>Brightside Studio</h3>
+                        <div class="art-divider"></div>
+                        <div class="art-meta">
+                            <span>Full Time</span>
+                            <span>Remote</span>
+                            <span>Bengalore</span>
+                            <span>Hyderabad</span>
+                            <span>Chennai</span>
+                            <span>pune</span>
+                            <span>3.5 to 5.0 LPA</span>
+                        </div>
+                        <div class="match-bar"><span></span></div>
+                        <small>92% profile match</small>
+                    </div>
+                    <div class="floating-note note-top">
+                        <span class="note-icon">✓</span>
+                        <span><b>Application sent</b><small>Brightside Studio</small></span>
+                    </div>
+                    <div class="floating-note note-bottom">
+                        <div class="avatar-stack"><i>A</i><i>M</i><i>+</i></div>
+                        <span><b>1,200+</b><small>students applied this month</small></span>                        
+                    </div>
+                    <span class="sparkle sparkle-one">*</span>
+                    <span class="sparkle sparkle-two">+</span>
+                </div>
+            </section>
+            <section class="trust-row">
+                <span>Helping to Students to get noticed by top employers</span>
+                <b>northstar</b>
+                <b>orbit<span class="trust-dot">.</span></b>
+                <b>Kinetic</b>
+                <b>◈  bloom</b>
+                <b>HORIZON</b>
+            </section>
+
+            <section class="section featured" id="featured-jobs">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">HANDPICKED FOR YOU</span>
+                        <h2>Opportuntities worth a look</h2>
+                        <p>Start building experience with team that invest in your potential</p>
+                    </div>
+                    <a class="text-link" href="pages/jobs.html">View all jobs <span>→</span></a>
+                </div>
+                <div class="job-grid" id="featured-jobs-list"></div>
+            </section>
+            <section class="how-section" id="how-it-works">
+                <div class="section-heading centered">
+                    <span class="eyebrow">YOUR NEXT CHAPTER</span>
+                    <h2>Three Simple Steps to Your Dream Job</h2>
+                    <p>Get started on your journey to a better career with these simple steps</p>
+                </div>
+                <div class="steps">
+                    <article>
+                        <span class="step-number">01</span>
+                        <h3>Build your profile</h3>
+                        <p>Explore opportunities and apply to roles that match your goals</p>
+                    </article>
+                    <article>
+                        <span class="step-number">02</span>
+                        <h3>Apply to jobs</h3>
+                        <p>Submit your application to positions that align with your skills and interests</p>
+                    </article>
+                    <article>
+                        <span class="step-number">03</span>
+                        <h3>Get hired</h3>
+                        <p>Connect with employers and land your dream job</p>
+                    </article>
+                </div>
+            </section>
+
+            </section>
+        </main>
+    </body>
+</html>
